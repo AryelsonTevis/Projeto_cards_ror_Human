@@ -1,0 +1,152 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    background-image: url('../imagens/ragnarok/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.cabecalho{
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cabecalho h1{
+    color: #f1ecff;
+    font-size: 45px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.personagens-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+}
+
+.lista-personagen{
+    position: relative;
+    width: 330px;
+    height: 530px;
+}
+.btn-seta{
+    width: 70px;
+    height: 70px;
+    border-radius: 25px 0px ;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: backgrond-color 0.5s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+ transform: rotateY(180deg);   
+}
+
+.btn-seta:hover{
+    background-color: #8351fe;
+}
+
+.cartao {
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    padding: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cartao.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+.cartao .imagen-personagen{
+    background-color: rgb( 200, 200, 200);
+    width: 100%;
+    max-height: 280px;
+}
+.cartao .nome{
+    background-color: rgba(179, 177, 185, 0.7);
+    padding: 8px 10px;
+    border-radius: 10px;    
+    color: #ffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.cartao .descricao {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    
+}
+.cartao .descricao .titulo{
+    background-color: #333;
+    font-size: 20px;
+    color: #ffff;
+    padding: 12px;
+    border-radius: 10px;
+
+}
+
+.cartao .descricao .texto{
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 110px;
+    overflow-y: auto;
+    
+}
+
+.btn{
+    border-radius: 20%;
+    text-align: center;
+    width: 90px;
+    height: 60px;
+    cursor: pointer;
+    transition: backgrond-color 0.5s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+
+}
+.btns{
+    margin: 10px;
+}
+.widget{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+.btn:hover{
+    background-color: #8351fe;
+}
+
+
+.cartao.fundo-1{
+    box-shadow: rgba(1, 1, 1, 0.56) 0px 22px 70px 4px;
+}
+.cartao.fundo-2{
+    box-shadow: rgba(1, 1, 1, 0.56) 0px 22px 70px 4px;
+}
+.cartao.fundo-3{
+    box-shadow: rgba(1, 1, 1, 0.56) 0px 22px 70px 4px;
+}
+.cartao.fundo-4{
+    box-shadow: rgba(1, 1, 1, 0.56) 0px 22px 70px 4px;
+}
+.cartao.fundo-5{
+    box-shadow: rgba(1, 1, 1, 0.56) 0px 22px 70px 4px;
+}
+.cartao.fundo-6{
+    box-shadow: rgba(1, 1, 1, 0.56) 0px 22px 70px 4px;
+}
+.cartao.fundo-7{
+    box-shadow: rgba(1, 1, 1, 0.56) 0px 22px 70px 4px;
+}
